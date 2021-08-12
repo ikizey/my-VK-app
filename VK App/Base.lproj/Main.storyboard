@@ -73,6 +73,9 @@
                                 <rect key="frame" x="163" y="413.5" width="49" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="login" destination="BYZ-38-t0r" eventType="touchUpInside" id="BLH-nh-ErS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -89,6 +92,11 @@
                             <constraint firstItem="JeW-jW-7za" firstAttribute="width" secondItem="2WG-cD-0Ja" secondAttribute="width" id="zdx-hc-m1Z"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="Bba-9Z-qct" id="kAo-yC-Mff"/>
+                        <outlet property="loginTextField" destination="2WG-cD-0Ja" id="xdo-ad-p0q"/>
+                        <outlet property="passwordTextField" destination="JeW-jW-7za" id="OgS-xz-imM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
