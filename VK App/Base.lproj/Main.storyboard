@@ -69,10 +69,17 @@
                                     <constraint firstAttribute="bottom" secondItem="JeW-jW-7za" secondAttribute="bottom" id="uph-cU-4kW"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bba-9Z-qct">
+                                <rect key="frame" x="163" y="413.5" width="49" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Login"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Bba-9Z-qct" firstAttribute="top" secondItem="IdD-s0-3PS" secondAttribute="bottom" constant="40" id="6YP-de-Md7"/>
+                            <constraint firstItem="Bba-9Z-qct" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="90R-5r-XlB"/>
                             <constraint firstItem="IdD-s0-3PS" firstAttribute="top" secondItem="lNi-hB-Njb" secondAttribute="bottom" constant="40" id="K5e-zu-FYd"/>
                             <constraint firstItem="IdD-s0-3PS" firstAttribute="centerX" secondItem="lNi-hB-Njb" secondAttribute="centerX" id="QLK-Yc-b3p"/>
                             <constraint firstItem="lNi-hB-Njb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QVw-pR-Mjv"/>
