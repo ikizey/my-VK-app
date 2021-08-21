@@ -58,13 +58,29 @@
 			children = (
 				972E646626C5AA970044EF59 /* AppDelegate.swift */,
 				972E646826C5AA970044EF59 /* SceneDelegate.swift */,
-				972E646A26C5AA970044EF59 /* LoginViewController.swift */,
-				972E646C26C5AA970044EF59 /* Main.storyboard */,
+				972E648626D110200044EF59 /* Controllers */,
+				972E648826D1102D0044EF59 /* Views */,
 				972E646F26C5AA9A0044EF59 /* Assets.xcassets */,
 				972E647126C5AA9A0044EF59 /* LaunchScreen.storyboard */,
 				972E647426C5AA9A0044EF59 /* Info.plist */,
 			);
 			path = "VK App";
+			sourceTree = "<group>";
+		};
+		972E648626D110200044EF59 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				972E646A26C5AA970044EF59 /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		972E648826D1102D0044EF59 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				972E646C26C5AA970044EF59 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
