@@ -22,6 +22,11 @@ class LoginViewController: UIViewController {
         passwordTextField.text!.count > 3
     }
 
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        guard identifier == "loginSuccess" else { return false }
+        return true
+    }
+
     @IBAction func login() {
         guard isValidLogin(), isValidPassword() else {
             let alert = UIAlertController(title: "Error",
@@ -33,7 +38,7 @@ class LoginViewController: UIViewController {
             return
         }
 
-        //
+        performSegue(withIdentifier: "loginSuccess", sender: nil)
     }
 }
 
