@@ -7,14 +7,14 @@ import UIKit
 class FriendsTableViewController: UITableViewController {
 
 
-    var friends = [String]() // TODO: - Friend Class
+    var friends = [User]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // dummy
-        friends.append("Alex")
-        friends.append("Jack")
+        for _ in 0..<10 {
+            friends.append(User.generate())
+        }
     }
 
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
@@ -30,12 +30,21 @@ class FriendsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "friendCell", for: indexPath)
-        cell.textLabel?.text = friends[indexPath.row]
+        let friend = friends[indexPath.row]
+        cell.textLabel?.text = friend.name
+        cell.imageView?.image = friend.image
         return cell
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        //performSegue(withIdentifier: "friendsPhotos", sender: nil)
+        performSegue(withIdentifier: "friendsPhotos", sender: friends[indexPath.row])
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let user = sender as? User else { return }
+        guard let destinationController = segue.destination as? FriendsPhotosCollectionViewController else { return }
+
+        destinationController.user = user
     }
 }

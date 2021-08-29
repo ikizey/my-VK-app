@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		970CC57826DC192A00207E44 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970CC57726DC192A00207E44 /* User.swift */; };
+		970CC57C26DC193D00207E44 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970CC57B26DC193D00207E44 /* Group.swift */; };
+		970CC58A26DC26C000207E44 /* UserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970CC58926DC26C000207E44 /* UserCollectionViewCell.swift */; };
 		972E646726C5AA970044EF59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972E646626C5AA970044EF59 /* AppDelegate.swift */; };
 		972E646926C5AA970044EF59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972E646826C5AA970044EF59 /* SceneDelegate.swift */; };
 		972E646B26C5AA970044EF59 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972E646A26C5AA970044EF59 /* LoginViewController.swift */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		970CC57726DC192A00207E44 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		970CC57B26DC193D00207E44 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		970CC58926DC26C000207E44 /* UserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserCollectionViewCell.swift; path = "VK App/Views/UserCollectionViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		972E646326C5AA970044EF59 /* VK App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		972E646626C5AA970044EF59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		972E646826C5AA970044EF59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		970CC57626DC191A00207E44 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				970CC57726DC192A00207E44 /* User.swift */,
+				970CC57B26DC193D00207E44 /* Group.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		972E645A26C5AA970044EF59 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +81,7 @@
 			children = (
 				972E646626C5AA970044EF59 /* AppDelegate.swift */,
 				972E646826C5AA970044EF59 /* SceneDelegate.swift */,
+				970CC57626DC191A00207E44 /* Models */,
 				972E648626D110200044EF59 /* Controllers */,
 				972E648826D1102D0044EF59 /* Views */,
 				972E646F26C5AA9A0044EF59 /* Assets.xcassets */,
@@ -83,6 +99,7 @@
 				972E649026D117A40044EF59 /* GroupTableViewController.swift */,
 				972E648A26D117840044EF59 /* FriendsTableViewController.swift */,
 				972E649326D117C10044EF59 /* FriendsPhotosCollectionViewController.swift */,
+				970CC58926DC26C000207E44 /* UserCollectionViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -165,13 +182,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				970CC57C26DC193D00207E44 /* Group.swift in Sources */,
 				972E646B26C5AA970044EF59 /* LoginViewController.swift in Sources */,
 				972E648E26D117930044EF59 /* GroupsTableViewController.swift in Sources */,
 				972E646726C5AA970044EF59 /* AppDelegate.swift in Sources */,
 				972E648B26D117840044EF59 /* FriendsTableViewController.swift in Sources */,
+				970CC57826DC192A00207E44 /* User.swift in Sources */,
 				972E649426D117C10044EF59 /* FriendsPhotosCollectionViewController.swift in Sources */,
 				972E646926C5AA970044EF59 /* SceneDelegate.swift in Sources */,
 				972E649126D117A40044EF59 /* GroupTableViewController.swift in Sources */,
+				970CC58A26DC26C000207E44 /* UserCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +338,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "VK App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -326,6 +348,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.kizey.VK-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -336,7 +359,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "VK App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -344,6 +369,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.kizey.VK-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
